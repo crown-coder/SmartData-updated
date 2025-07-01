@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MTN from '../../../../assets/mtn.png';
+import MTN from '../../../../assets/MTN.png';
 import Airtel from '../../../../assets/Airtel.png';
 import Glo from '../../../../assets/Glo.png';
 import NineMobile from '../../../../assets/9mobile.png';
