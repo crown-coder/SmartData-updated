@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { CheckCircleIcon } from '@heroicons/react/20/solid';
+import { CiCircleCheck } from "react-icons/ci";
 
 const CardSelectionModal = ({ cards, onSelect, onClose }) => {
     const [selectedCard, setSelectedCard] = useState(null);
@@ -42,7 +42,7 @@ const CardSelectionModal = ({ cards, onSelect, onClose }) => {
                                 </div>
                             </div>
                             {selectedCard?.id === card.id && (
-                                <CheckCircleIcon className="h-5 w-5 text-blue-500" />
+                                <CiCircleCheck className="h-5 w-5 text-blue-500" />
                             )}
                         </div>
                     </div>
