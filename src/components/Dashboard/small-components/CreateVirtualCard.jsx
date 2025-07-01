@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import Cookies from 'js-cookie';
-import { CheckCircleIcon, XMarkIcon } from '@heroicons/react/20/solid';
 import AlertBox from './AlertBox';
 
 const FormField = ({ label, name, value, onChange, placeholder, error, type = 'text', required = true }) => (
@@ -664,7 +663,7 @@ const CreateVirtualCard = ({ onCardCreated }) => {
                                 }}
                                 className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600"
                             >
-                                <XMarkIcon className="h-4 w-4" />
+                                X
                             </button>
                         </div>
                     </div>
@@ -728,7 +727,6 @@ const CreateVirtualCard = ({ onCardCreated }) => {
                                 "Instant issuance with no physical card needed"
                             ].map((item, index) => (
                                 <li key={index} className="flex items-start">
-                                    <CheckCircleIcon className="h-5 w-5 text-blue-400 mr-2 mt-0.5 flex-shrink-0" />
                                     <span>{item}</span>
                                 </li>
                             ))}
