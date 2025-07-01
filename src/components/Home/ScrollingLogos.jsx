@@ -6,8 +6,8 @@ import Neco from '../../assets/home/neco2.png'
 import Gotv from '../../assets/home/gotv2.png'
 import DSTV from '../../assets/home/dstv2.png'
 import Startimes from '../../assets/home/startimes2.png'
-import Jed from '../../assets/home/jed2.png'
-import AEDC from '../../assets/home/aedc2.png'
+import Jed from '../../assets/home/JED2.png'
+import AEDC from '../../assets/home/AEDC2.png'
 import Ikeja from '../../assets/home/ikeja2.png'
 
 const ScrollingLogos = () => {
