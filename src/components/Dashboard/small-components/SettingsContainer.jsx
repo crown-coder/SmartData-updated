@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
-import { toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
 import Cookies from 'js-cookie';
 import SettingsCard from "./SettingsCard";
@@ -72,11 +71,11 @@ const AddBankModal = ({ onClose }) => {
                 withCredentials: true
             });
 
-            toast.success('Bank details added successfully!');
+            alert('Bank details added successfully!');
             onClose();
         } catch (error) {
             console.error('Error adding bank details:', error);
-            toast.error(error.response?.data?.message || 'Failed to add bank details');
+            alert(error.response?.data?.message || 'Failed to add bank details');
         } finally {
             setIsSubmitting(false);
         }
