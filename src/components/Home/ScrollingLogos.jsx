@@ -6,7 +6,7 @@ import Neco from '../../assets/home/neco2.png'
 import Gotv from '../../assets/home/gotv2.png'
 import DSTV from '../../assets/home/dstv2.png'
 import Startimes from '../../assets/home/startimes2.png'
-import Jed from '../../assets/home/JED2.png'
+import JED from '../../assets/home/JED2.png'
 import AEDC from '../../assets/home/AEDC2.png'
 import Ikeja from '../../assets/home/ikeja2.png'
 
@@ -22,7 +22,7 @@ const ScrollingLogos = () => {
                 transition={{ ease: "linear", duration: 20, repeat: Infinity }}
             >
                 {/* Logos - Duplicated for Infinite Effect */}
-                {[Waec, Nabtab, Neco, Gotv, DSTV, Startimes, Jed, AEDC, Ikeja, Waec, Nabtab, Neco, Gotv, DSTV, Startimes, Jed, AEDC, Ikeja].map((logo, index) => (
+                {[Waec, Nabtab, Neco, Gotv, DSTV, Startimes, JED, AEDC, Ikeja, Waec, Nabtab, Neco, Gotv, DSTV, Startimes, JED, AEDC, Ikeja].map((logo, index) => (
                     <img key={index} src={logo} alt="logo" className="w-auto h-16 max-lg:w-[45px] max-lg:object-contain" />
                 ))}
             </motion.div>
